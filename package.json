@@ -19,10 +19,6 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "github_repository": {
-        "owner": "yukikurage",
-        "name": "update-electron-test"
-      },
       "packagerConfig": {},
       "makers": [
         {

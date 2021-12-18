@@ -45,6 +45,6 @@ app.on('activate', () => {
 
 require('update-electron-app')({
   repo: 'yukikurage/update-electron-test',
-  updateInterval: '5 minute',
+  updateInterval: '5 minutes',
   logger: require('electron-log')
 })

@@ -44,7 +44,7 @@ app.on('activate', () => {
 // code. You can also put them in separate files and import them here.
 
 require('update-electron-app')({
-  repo: 'github-user/repo',
+  repo: 'yukikurage/update-electron-test',
   updateInterval: '1 hour',
   logger: require('electron-log')
 })

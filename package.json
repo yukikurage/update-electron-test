@@ -50,8 +50,7 @@
         {
           "name": "@electron-forge/publisher-github",
           "platforms": [
-            "win32",
-            "darwin"
+            "win32"
           ],
           "config": {
             "repository": {

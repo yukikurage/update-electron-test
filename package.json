@@ -19,6 +19,10 @@
   "license": "MIT",
   "config": {
     "forge": {
+      "github_repository": {
+        "owner": "yukikurage",
+        "name": "update-electron-test"
+      },
       "packagerConfig": {},
       "makers": [
         {
@@ -41,10 +45,27 @@
           "name": "@electron-forge/maker-rpm",
           "config": {}
         }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "platforms": [
+            "win32",
+            "darwin"
+          ],
+          "config": {
+            "repository": {
+              "owner": "yukikurage",
+              "name": "update-electron-test"
+            }
+          }
+        }
       ]
     }
   },
   "dependencies": {
+    "@electron-forge/publisher-github": "^6.0.0-beta.61",
+    "dotenv-webpack": "^7.0.3",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
